@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YisumiNet | יישומינט - תמיכה ללקוחות</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Your custom styles here */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
+            background-size: cover;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .jumbotron {
+            background-color: #e9ecef;
+        }
+
+        .jumbotron h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .jumbotron img {
+            max-width: 10%;
+            height: auto; 
+            filter: brightness(60%);
+            margin-bottom: 1em;
+        }
+
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+
+        #contact-form label {
+            font-weight: bold;
+        }
+
+        #contact-form button {
+            margin-top: 20px;
+        }
+
+        .small-button {
+            border-radius: 0;
+            width: 150px; 
+            height: 50px;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <img src="ico_isumunet.png" alt="isumunet Icon">
+        <h1 class="display-4" dir="rtl">תודה שבחרתם ביישומינט</h1>
+        <h2 class="display-4">Thank you for choosing YisumiNet</h2>
+        <p class="lead" dir="rtl">יישומינט שמה למטרה לשרת את הציבור עם אינטרנט מותאם אישית. 
+            נוח, מהיר, ומסונן למהדרין.</p>
+        <hr class="my-4">
+        <p dir="rtl">לשאלות, הצעות, ותלונות נא למלא את הטופס.</p>
+    </div>
+
+    <div id="contact-form">
+        <form action="mailto:yisuminet@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">שם</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">טלפון</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">דוא"ל</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">הודעה</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">שלח</button>
+        </form>
+    </div>    
+
+    <div class="text-center">
+        <a href="https://www.netsparkmobile.com/?a=login_form&lang=he" target="_blank" style="text-decoration: underline;"><small>לשימוש צוות</small></a>
+        <a href="https://www.teamviewer.com/" target="_blank" style="text-decoration: underline;"><small>חיבור מרוחק</small></a>
+    </div>    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
